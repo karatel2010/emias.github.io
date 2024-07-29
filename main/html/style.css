@@ -1,0 +1,238 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  text-decoration: none;
+}
+
+body {
+  overflow: hidden;
+  animation: scroll 100s linear infinite;
+  background: url("../images/abstract-dense-cloud-between-azure-smoke_23-2148102083.avif"),
+    #111111;
+  /* background-repeat: no-repeat;
+    background-size: cover; */
+  color: #eee;
+  /* min-width: 360px; */
+  /* width: 100; */
+  perspective: 1000px;
+  perspective-origin: 50% 50%;
+}
+
+main {
+  height: 83.2vh;
+}
+
+.container {
+  width: 87vw;
+}
+
+nav {
+  /* background-color: rgb(124, 34, 85); */
+  background: transparent;
+  border: 2px solid rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(20px);
+  box-shadow: #2a0322;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.head_container_nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 30px 0;
+  /* padding: 30px 100px; */
+}
+
+.logo {
+  width: auto;
+  height: auto;
+}
+
+.head_container_nav_btn a {
+  align-items: center;
+  background-color: #1da5ba7a;
+  border-radius: 8px;
+  color: #000000;
+  cursor: pointer;
+  display: flex;
+  height: 40px;
+  /* justify-content: flex-start; */
+  outline: none;
+  padding: 0 12px;
+  justify-content: space-between;
+  width: 256px;
+}
+
+.head_container_nav_btn a div {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo {
+  height: 50px;
+  width: 50px;
+  margin-right: 60px;
+}
+
+/* https://th.bing.com/th/id/OIP.a1kMsub-iJrGK-Nrkn_-HwHaDS?rs=1&pid=ImgDetMain */
+
+.animation-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  /* filter: brightness(40%); */
+  /* width: 100vw;
+    height: 100vh;
+    background: rgb(0, 3, 36);
+    background: linear-gradient( 157deg, rgb(142, 26, 109) 0%, rgba(156, 51, 132, 1) 24%, rgb(134, 43, 137) 100%);
+    animation: change-background 2s ease infinite; */
+}
+
+.head_container_nav_logo ul {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+  color: black;
+}
+
+.head_container_nav_logo a {
+  color: #000000;
+}
+
+.head_container_nav_logo ul li {
+  font-size: 22px;
+}
+
+.nav_avtorize_logo {
+  width: 30px;
+  height: 30px;
+}
+
+.head_container_nav_btn:hover {
+  background: #1da5bac8;
+  border-radius: 8px;
+}
+
+.head_container_nav_logo a:hover {
+  cursor: pointer;
+  color: white;
+}
+
+@keyframes scroll {
+  100% {
+    background-position: 0px -400%;
+  }
+}
+
+@media (prefers-reduced-motion) {
+  .wrapper {
+    animation: scroll 20000s linear infinite;
+  }
+}
+
+.main_container {
+  backdrop-filter: blur(20px);
+  box-shadow: 10px 10px 10px #342b2bc6;
+  max-width: 87vw;
+  filter: brightness(87%);
+  box-sizing: border-box;
+  display: flex;
+  padding: 80px;
+  border-radius: 40px;
+  justify-content: center;
+  flex-direction: column;
+  gap: 100px;
+  position: relative;
+}
+
+.main_container form {
+  display: flex;
+}
+
+.main_container form label {
+  color: rgb(255, 255, 255);
+  margin-left: 10px;
+}
+
+.main_container h1 {
+  color: rgb(255, 255, 255);
+  font-size: 40px;
+}
+
+input::placeholder {
+  color: #ffffff;
+}
+
+.__input__ {
+  color: #eee;
+  /* width: 100%; */
+  /* height: 100%px;   */
+  background: transparent;
+  border: none;
+  outline: none;
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  border-radius: 40px;
+  padding: 20px 45px 20px 20px;
+  /* background: #ffffffb3; */
+  padding: 10px 20px;
+  /* max-width: 50px; */
+  /* border-radius: 5px; */
+  /* border-color: #1700e8; */
+  border: 0.25rem solid rgb(0, 102, 255);
+}
+
+.main_input {
+  width: 320px;
+}
+
+.main_cotainer_input-polis {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.main_container_input-date {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+input::selection {
+  color: rgb(0, 102, 255);
+}
+
+input:focus {
+  background: #1da5bac8;
+  color: #000000;
+}
+
+input:hover {
+  background: #1da5bac8;
+}
+
+.btn {
+  position: absolute;
+  bottom: 12%;
+  font-size: 20px;
+  left: 40%;
+  padding: 25px 80px;
+  border-radius: 20px;
+  color: black;
+  cursor: pointer;
+  background: #1da5ba82;
+}
+
+.btn:hover {
+  background: #1da5babe;
+  box-shadow: 10px 10px 20px 20px #eeeeee74;
+}
+
+.main_container_section_input {
+  display: flex;
+  /* flex-direction: row; */
+}
